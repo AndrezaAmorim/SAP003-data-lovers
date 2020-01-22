@@ -3,101 +3,119 @@
 *{
    padding: 0;
 }
+
 body{
    background: url(images/fundo1.png) no-repeat center fixed;
    background-size: cover;
    z-index: 0;
 }
+
 header{
    display: flex;
    justify-content: center;
 }
-.header{
+
+.logo{
    display: flex;
    justify-content: center;
    margin-top: 10px;
    height: 100px;
    width: 500px
 }
+
 .menu{
-   cursor: pointer;
    width: 1100px;
    height: 55px;
-   background-color: #d50000;
-   text-align: center;
-   position: relative;
    margin-left: 10%;
    margin-bottom: 17px;
+   border-radius: 10px;
+   text-align: center;
+   position: relative;
+   background-color: #d50000;
    font-family: 'Signika', sans-serif;
    font-size:  16px;
-   border-radius: 10px;
+   cursor: pointer;
    z-index: 1;
 }
+
 .menu ul{
    list-style: none;
    position: relative;
 }
+
 .menu ul li{
    width: 220px;
    float: left;
 }
+
 .menu a{
-   padding: 15px;
    display: block;
-   text-decoration: none;
+   padding: 15px;
+   border-radius:10px;
    text-align: center;
+   text-decoration: none;
    background-color: #d50000;
    color: white;
-   border-radius:10px;
 }
+
 .menu ul ul{
    position: absolute;
    visibility: hidden;
 }
+
 .menu ul li:hover ul{
    visibility: visible;
 }
+
 .menu a:hover{
    background-color:#9b0000;
    color: #ffffff;
 }
+
 .menu ul ul li{
    float: none;
    border-bottom: solid 1px rgb(204, 204, 204);
 }
+
 .menu ul ul li a{
    background-color:#ff3f31;
    border-radius:0px;
 }
+
 label[for="bottomMenu"]{
-   background-color: red;
-   color: rgb(204, 204, 204);
-   font-family: Arial, Helvetica, sans-serif;
-   text-align: center;
-   font-size: 30px;
-   cursor: pointer;
+   display: none;
    width: 50px;
    height: 50px;
-   display: none;
+   text-align: center;
+   font-size: 30px;
+   font-family: Arial, Helvetica, sans-serif;
+   cursor: pointer;
+   background-color: red;
+   color: rgb(204, 204, 204);
 }
+
 #bottomMenu{
    display: none;
-}    
+}
+
 .imgMenu{
    display: flex;
    width: 30px;
    margin-bottom: -25px;
    margin-left: 20px
 }
+
 .candyMenu{
    margin-left: -10px;
 }
+
 .list{
    display: flex;
    flex-wrap: wrap;
    justify-content: space-around;
    z-index: 1;
 } 
+
 .maincontainer{
    position: relative;
    width: 20%;
@@ -106,6 +124,7 @@ label[for="bottomMenu"]{
    font-family: 'Signika', sans-serif;
    cursor: pointer;
 }
+
 .pokecard{    
    border-radius: 10px;
    width: 100%;
@@ -113,55 +132,61 @@ label[for="bottomMenu"]{
    transform-style: preserve-3d;
    transition: all 0.4s ease;  
 }
+
 .pokecard:hover{
    transform: rotateY(180deg);
 }
+
 .pokeFront{
    display: flex;
    align-items: center;
    justify-content: center;
    background-size: cover;
-   width: 100%;
    flex-direction: column;
+   width: 100%;
 }
+
 .front{
    display: flex;
    position: absolute;
    width: 100%;
    height: 100%;
+   border-radius: 10px;
    backface-visibility: hidden;
    background-image: url(images/fundocard.png);
    background-size:cover;
    background-color: rgb(143, 143, 235);
-   border-radius: 10px;
+   color: #000;
    font-family: 'Signika', sans-serif;
    font-size:20px;
-   color: #000;
    box-shadow: 4px 4px 10px rgba(90, 90, 90, 0.719);
 }
+
 .frontlogo{
    width: 150px;
 }
+
 .back{
    width: 100%;
    height: 100%;
+   padding: 5px;
    border-radius: 10px;
    backface-visibility: hidden;
    overflow: hidden;
    background: #fafafaf5;
    color: #333;
    transform: rotateY(180deg);
-   padding: 5px;
    box-shadow: 4px 4px 10px rgba(99, 98, 98, 0.658)
 }
+
 .num{
    width: 20%;
-   text-align: start;
    margin-bottom: -50px;
+   margin-left: 8%;
    text-align: left;
    border-radius: 50px;
-   margin-left: 8%;
 }
+
 .name{
    display: flex;
    justify-content: flex-end;
@@ -170,28 +195,33 @@ label[for="bottomMenu"]{
    margin-bottom: -7%;
    margin-right: 8%;
 }
+
 .pokeimg{
    display: flex;
    justify-content: center;
+   width: 80%;
+   margin-left: 8%;
    border:solid #afafaf 5px;
    background-image: url(images/pokego.png);
    background-size: cover;
-   width: 80%;
-   margin-left: 8%;
    box-shadow: 2px 3px 5px rgba(12, 12, 12, 0.692);
 }
+
 .cardIcons{
    width: 30px;
    height: auto;
    margin-bottom:-5px;
    margin-right: 5px;
 }
+
 .egg{
    margin-left: 8%
 }
+
 .candyIcon{
    margin-top: -5px;
 }
+
 .candy{
    display: flex;
    justify-content: flex-end;
@@ -199,17 +229,21 @@ label[for="bottomMenu"]{
    margin-left: 8%;
    margin-top: -40px;
 }
+
 .insideCard{
    width: 80%;
    margin-left: 8%;
    word-break: break-word;
 }
+
 .subtittles{
    margin-bottom: -5px;
 }
+
 .statistics{
    margin-left: 14%;
 }
+
 .showInfo{
    display: flex;
    flex-direction: column;
@@ -219,23 +253,26 @@ label[for="bottomMenu"]{
    margin: 15px;
    width: 76%;
    height: auto;
-   background: #ffffff8e;
    border-radius: 15px;
    font-family:'Signika', sans-serif;
    font-size: 20px;
+   background: #ffffff8e;
    color: #252525;
 }
+
 .ajustImage{
    width: 100px;
    height: auto;
    margin-top: 30px;
    margin-left: 22px;
 }
+
 .ajustImage:hover{
    -webkit-transform: scale(2.0);
    -ms-transform: scale(2.0);
    transform: scale(2.0);
 }
+
 .search{
    display: flex;
    justify-content: flex-end;
@@ -244,6 +281,7 @@ label[for="bottomMenu"]{
    margin-top: -100px;
    margin-bottom: 90px;
 }
+
 .searchBox{
    width: 250px;
    height: 40px;
@@ -251,43 +289,47 @@ label[for="bottomMenu"]{
    float: left;
    font-family: 'Signika', sans-serif;
 }
+
 .searchImage{
    width: 30px;
    height: 30px;
-   background-color: #fcf265;
    padding: 5px 10px;
    border-radius: 2px;
    cursor: pointer;
+   background-color: #fcf265;
 }
+
 .searchImage:active {
 	position:relative;
 	top:1px;
 }
+
 .searchResult{
    margin-top:12%;
    font-family:'Signika', sans-serif;
    font-size: 20px;
 }
-.Top{
+
+.top{
    position:fixed;
 	right:0px;
-   text-decoration: none;
-   background:#fbff01;
    bottom: 15px;
-   color: rgba(14, 13, 13, 0.87);
-   text-align: center;
-   cursor: pointer;
    padding: 8px;
+   border: 10;
+   border-radius: 100%;
+   cursor: pointer;
+   text-align: center;
+   text-transform: uppercase;
+   text-decoration: none;
+   font-family:'Signika', sans-serif;
    font-size: 10px;
    font-weight: bold;
-   text-transform: uppercase;
-   position: fixed;
-   border: 10;
-   font-family:'Signika', sans-serif;
+   background:#fbff01;
+   color: rgba(14, 13, 13, 0.87);
    opacity: .8;
-   border-radius: 100%;
 }
-.Top:hover{
+
+.top:hover{
    -webkit-transform: scale(1.5);
    -ms-transform: scale(1.5);
    transform: scale(1.5);
@@ -295,102 +337,78 @@ label[for="bottomMenu"]{
 }
 
 @media (max-width: 800px){
-   .header{
-      display: flex;
-      justify-content: center;
+   .logo{
       width: 80%;
       margin-top: 17px;
    }
+
    .list{
       margin-top:-100px;
    }
+
    .maincontainer{
       width: 60%;
-      height: auto;
    }
-   .pokecard{
-      width:100%;
-      height: 100%;
-   }
+
    .menu{
       margin-top: 5px;
       margin-left: -100%;
-      transition: all .4s;
       width: 100%;
+      transition: all .4s;
    }
+
    .menu ul li{
       width: 100%;
       float: none;
    }
+
    .menu ul ul{
       position: static;
       overflow: hidden;
       max-height: 0;
       transition: all .4s;
    }
+
    .menu ul li:hover ul{
       height: auto;
       max-height: 900px;
    }
+
    label[for="bottomMenu"]{
       display: block;
-      cursor: pointer;
    }
+
    #bottomMenu:checked ~ .menu{
       margin-left: 0;
    }
+
    .inner{
       width: 89%
    }
+
    .showInfo{
       width: 80%;
-      height: auto;
    }
+
    .search{
-      display: flex;
       justify-content: center;
-      width: 100%;
-      height: 30px;
       margin-top: 20px;
       margin-bottom: -10px;
    }
+
    .searchBox{
+      justify-content: right;
       width: 200px;
       height: 30px;
-      padding: 5px;
-      float: left;
-      font-family: 'Signika', sans-serif;
-      justify-content: right;
    }
+
    .searchImage{
+      justify-content: right;
       width: 20px;
       height: 20px;
-      background-color: #fcf265;
-      padding: 5px 10px;
-      border-radius: 2px;
-      cursor: pointer;
-      justify-content: right;
    }
-   .Top{
-      position:fixed;
-      right:0px;
-      text-decoration: none;
-      background:#fbff01;
-      bottom: 10px;
-      color: rgba(14, 13, 13, 0.87);
-      text-align: center;
-      cursor: pointer;
-      padding: 8px;
-      font-size: 10px;
-      font-weight: bold;
-      text-transform: uppercase;
-      position: fixed;
-      border: 8;
-      font-family:'Signika', sans-serif;
-      opacity: .8;
-      border-radius: 100%;
-  }
-  .candyMenu{
+
+   .candyMenu{
       margin-left: 17px;
-  }
+   }
 }

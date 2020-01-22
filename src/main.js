@@ -67,7 +67,7 @@ function pokecards(array) {
         </div>  
       </div>
       <div>
-        <a href="#" class="Top">Topo</a>
+        <a href="#" class="top">Topo</a>
       </div>
     </section>`
   ).join("")}`;
@@ -97,7 +97,7 @@ function printResult() {
       </div>
     </div> 
     <div>
-      <a href="#" class="Top">Topo</a>
+      <a href="#" class="top">Topo</a>
     </div>
   </section>`;
 };
